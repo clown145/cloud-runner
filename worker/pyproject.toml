@@ -7,8 +7,8 @@ dependencies = []
 
 [dependency-groups]
 dev = [
-    "pywrangler",
     "ruff>=0.15.8",
+    "workers-py",
     "workers-runtime-sdk",
 ]
 
@@ -18,4 +18,3 @@ target-version = "py312"
 
 [tool.ruff.lint]
 select = ["E", "F", "I", "UP", "B", "SIM"]
-

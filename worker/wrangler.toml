@@ -2,6 +2,7 @@
 name = "cloud-runner-python"
 main = "src/entry.py"
 compatibility_date = "2026-04-15"
+compatibility_flags = ["python_workers"]
 
 # Set RUNNER_TOKEN with:
 #   npx wrangler secret put RUNNER_TOKEN
