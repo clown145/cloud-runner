@@ -1,12 +1,13 @@
 .DS_Store
 .env
 .venv/
+.venv-workers/
 __pycache__/
 .ruff_cache/
 .wrangler/
+python_modules/
 node_modules/
 dist/
 
 # Cloudflare local secrets
 worker/.dev.vars
-

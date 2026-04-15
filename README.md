@@ -24,7 +24,7 @@ The first implementation is a Cloudflare Python Worker:
 ```bash
 cd worker
 cp .dev.vars.example .dev.vars
-uv run pywrangler dev
+UV_LINK_MODE=copy uv run pywrangler dev
 ```
 
 For deployment:
@@ -32,8 +32,10 @@ For deployment:
 ```bash
 cd worker
 npx wrangler secret put RUNNER_TOKEN
-uv run pywrangler deploy
+UV_LINK_MODE=copy uv run pywrangler deploy
 ```
+
+`UV_LINK_MODE=copy` avoids hardlink-copy issues when deploying from `proot-distro`.
 
 ## Example Request
 
