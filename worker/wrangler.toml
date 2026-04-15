@@ -1,0 +1,9 @@
+"$schema" = "./node_modules/wrangler/config-schema.json"
+name = "cloud-runner-python"
+main = "src/entry.py"
+compatibility_date = "2026-04-15"
+
+# Set RUNNER_TOKEN with:
+#   npx wrangler secret put RUNNER_TOKEN
+#
+# For local development, copy .dev.vars.example to .dev.vars.

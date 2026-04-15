@@ -1,0 +1,5 @@
+interface:
+  display_name: "Cloud Runner"
+  short_description: "Run small remote code tasks from AI clients"
+  default_prompt: "Use $cloud-runner to run a short Python calculation remotely and return the result."
+

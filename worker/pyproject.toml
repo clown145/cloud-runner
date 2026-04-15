@@ -1,0 +1,21 @@
+[project]
+name = "cloud-runner-worker"
+version = "0.1.0"
+description = "Cloudflare Python Worker for short remote code execution."
+requires-python = ">=3.12"
+dependencies = []
+
+[dependency-groups]
+dev = [
+    "pywrangler",
+    "ruff>=0.15.8",
+    "workers-runtime-sdk",
+]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM"]
+
