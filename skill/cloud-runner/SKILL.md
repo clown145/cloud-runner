@@ -8,6 +8,10 @@ description: Remote code execution workflow for AI clients that need to run shor
 Use Cloud Runner to run small Python tasks through a remote endpoint. Treat it as a short-lived
 calculation service, not a shell, package manager, or project test runner.
 
+If a Cloud Runner MCP server is installed, prefer the MCP tools (`run_python`, `health_check`,
+`get_runner_limits`) over direct HTTP or local scripts. Use the bundled scripts as a fallback when
+MCP is unavailable.
+
 The installed skill includes a runnable client:
 
 ```bash

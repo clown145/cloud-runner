@@ -10,6 +10,15 @@ Authorization: Bearer <RUNNER_TOKEN>
 Content-Type: application/json
 ```
 
+Remote MCP is available separately at:
+
+```http
+POST /mcp
+Authorization: Bearer <RUNNER_TOKEN>
+Content-Type: application/json
+MCP-Protocol-Version: 2025-03-26
+```
+
 ## Request
 
 ```json
@@ -57,3 +66,19 @@ Errors use the same envelope:
 Use this protocol for small, deterministic Python calculations, text processing, JSON transforms,
 and algorithm checks. It is not a full Linux shell and does not install dependencies.
 
+## MCP Tools
+
+The Worker also exposes a remote MCP endpoint with three tools:
+
+- `run_python`
+- `health_check`
+- `get_runner_limits`
+
+The `/mcp` endpoint is stateless JSON-response mode. It supports:
+
+- `initialize`
+- `ping`
+- `tools/list`
+- `tools/call`
+
+It does not open SSE streams, so `GET /mcp` returns `405 Method Not Allowed`.

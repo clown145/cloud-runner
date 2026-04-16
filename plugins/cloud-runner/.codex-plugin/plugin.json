@@ -1,0 +1,40 @@
+{
+  "name": "cloud-runner",
+  "version": "0.1.0",
+  "description": "Remote MCP plugin for the Cloud Runner Python execution Worker.",
+  "author": {
+    "name": "clown145",
+    "url": "https://github.com/clown145"
+  },
+  "homepage": "https://github.com/clown145/cloud-runner",
+  "repository": "https://github.com/clown145/cloud-runner",
+  "license": "MIT",
+  "keywords": [
+    "mcp",
+    "cloudflare",
+    "python",
+    "remote-execution",
+    "worker"
+  ],
+  "mcpServers": "./.mcp.json",
+  "interface": {
+    "displayName": "Cloud Runner",
+    "shortDescription": "Remote Python MCP backed by a Worker",
+    "longDescription": "Connect AI clients to the Cloud Runner Worker over remote MCP for short Python execution, health checks, and runtime limits.",
+    "developerName": "clown145",
+    "category": "Coding",
+    "capabilities": [
+      "Interactive",
+      "Write"
+    ],
+    "websiteURL": "https://github.com/clown145/cloud-runner",
+    "privacyPolicyURL": "https://github.com/clown145/cloud-runner",
+    "termsOfServiceURL": "https://github.com/clown145/cloud-runner",
+    "defaultPrompt": [
+      "Run a short Python calculation through Cloud Runner",
+      "Check Cloud Runner health and current limits"
+    ],
+    "brandColor": "#F48120",
+    "screenshots": []
+  }
+}

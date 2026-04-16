@@ -1,2 +1,3 @@
 RUNNER_TOKEN=replace-with-a-long-random-token
-
+# Optional: comma-separated browser origins allowed to call /mcp when Origin is present.
+# ALLOWED_ORIGINS=https://localhost:5173

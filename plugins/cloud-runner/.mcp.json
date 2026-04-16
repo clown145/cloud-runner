@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "cloud-runner": {
+      "type": "http",
+      "url": "https://cloud-runner-python.clown145.workers.dev/mcp",
+      "headers": {
+        "Authorization": "Bearer ${CLOUD_RUNNER_TOKEN}"
+      },
+      "note": "Remote MCP endpoint backed by the Cloud Runner Worker. Set CLOUD_RUNNER_TOKEN before use."
+    }
+  }
+}
